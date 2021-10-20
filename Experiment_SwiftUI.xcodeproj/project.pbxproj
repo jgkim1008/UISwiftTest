@@ -12,7 +12,7 @@
 		CC78E040272021320070A17F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC78E03F272021320070A17F /* Assets.xcassets */; };
 		CC78E043272021320070A17F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC78E042272021320070A17F /* Preview Assets.xcassets */; };
 		CC78E04A272022BB0070A17F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC78E049272022BB0070A17F /* Model.swift */; };
-		CC78E04E27202C200070A17F /* EnvironmentToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC78E04D27202C200070A17F /* EnvironmentToggleView.swift */; };
+		CC78E04E27202C200070A17F /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC78E04D27202C200070A17F /* ToggleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		CC78E03F272021320070A17F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC78E042272021320070A17F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC78E049272022BB0070A17F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		CC78E04D27202C200070A17F /* EnvironmentToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentToggleView.swift; sourceTree = "<group>"; };
+		CC78E04D27202C200070A17F /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 				CC78E03B2720212E0070A17F /* Experiment_SwiftUIApp.swift */,
 				CC78E049272022BB0070A17F /* Model.swift */,
 				CC78E03D2720212E0070A17F /* ContentView.swift */,
-				CC78E04D27202C200070A17F /* EnvironmentToggleView.swift */,
+				CC78E04D27202C200070A17F /* ToggleView.swift */,
 				CC78E03F272021320070A17F /* Assets.xcassets */,
 				CC78E041272021320070A17F /* Preview Content */,
 			);
@@ -145,7 +145,7 @@
 			files = (
 				CC78E04A272022BB0070A17F /* Model.swift in Sources */,
 				CC78E03E2720212E0070A17F /* ContentView.swift in Sources */,
-				CC78E04E27202C200070A17F /* EnvironmentToggleView.swift in Sources */,
+				CC78E04E27202C200070A17F /* ToggleView.swift in Sources */,
 				CC78E03C2720212E0070A17F /* Experiment_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

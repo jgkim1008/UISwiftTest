@@ -12,7 +12,6 @@ struct Experiment_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(Model())
         }
     }
 }

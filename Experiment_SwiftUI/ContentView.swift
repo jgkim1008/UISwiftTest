@@ -10,18 +10,12 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        LazyVGrid(columns: [GridItem(), GridItem()]) {
-            EnvironmentToggleView()
-            EnvironmentToggleView()
-            EnvironmentToggleView()
-            EnvironmentToggleView()
-        }
+        Text("")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(Model())
     }
 }

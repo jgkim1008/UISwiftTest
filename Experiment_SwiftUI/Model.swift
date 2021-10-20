@@ -7,6 +7,6 @@
 
 import Foundation
 
-class Model: ObservableObject {
-    @Published var isEnvironmentObjectSwitchOn: Bool = false
+class Model {
+    //Step 2 에서 EnvironmentObject를 정의해야하는 곳
 }

@@ -7,9 +7,8 @@
 
 import SwiftUI
 
-struct EnvironmentToggleView: View {
+struct ToggleView: View {
     @State private var isStateToggleOn: Bool = false
-    @EnvironmentObject var model: Model
     
     var body: some View {
             
@@ -19,16 +18,9 @@ struct EnvironmentToggleView: View {
                 .foregroundColor(.red)
             
             VStack {
-                if isStateToggleOn {
-                    Text("StateToggleOn")
-                } else {
-                    Text("StateToggleOff")
-                }
+                Text("On / Off?")
                 
                 Toggle("State", isOn: $isStateToggleOn)
-                    .padding()
-                
-                Toggle("Environment", isOn: $model.isEnvironmentObjectSwitchOn)
                     .padding()
             }
         }
@@ -40,7 +32,6 @@ struct EnvironmentToggleView: View {
 
 struct EnvironmentToggleView_Previews: PreviewProvider {
     static var previews: some View {
-        EnvironmentToggleView()
-            .environmentObject(Model())
+        ToggleView()
     }
 }
