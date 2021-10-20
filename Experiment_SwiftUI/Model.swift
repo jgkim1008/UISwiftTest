@@ -8,5 +8,5 @@
 import Foundation
 
 class Model {
-    //Step 2 에서 EnvironmentObject를 정의해야하는 곳
+    //Step 3 에서 활용
 }

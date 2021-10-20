@@ -18,7 +18,7 @@ struct ToggleView: View {
                 .foregroundColor(.red)
             
             VStack {
-                Text("On / Off?")
+                Text("State Off")
                 
                 Toggle("State", isOn: $isStateToggleOn)
                     .padding()
