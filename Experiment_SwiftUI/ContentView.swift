@@ -11,8 +11,8 @@ struct ContentView: View {
     
     var body: some View {
         LazyVGrid(columns: [GridItem(), GridItem()]) {
-            ToggleView()
-            ToggleView()
+            EnvironmentToggleView()
+            EnvironmentToggleView()
             EnvironmentToggleView()
             EnvironmentToggleView()
         }
