@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ToggleView: View {
     @State private var isStateToggleOn: Bool = false
-    
+    @State private var isEnvironmentToggleOn: Bool = false
+    @EnvironmentObject var sharedData: Model
+    @StateObject var isState = Model()
     var body: some View {
             
         ZStack {
@@ -18,15 +20,21 @@ struct ToggleView: View {
                 .foregroundColor(.red)
             
             VStack {
-                Text("State On / Off ?")
+                if isStateToggleOn {
+                    Text("State On ")
+                } else{
+                    Text("State Off")
+                }
                 
                 Toggle("State", isOn: $isStateToggleOn)
                     .padding()
+                Toggle("Environment", isOn: $isEnvironmentToggleOn)
+                    .padding()
+
             }
         }
         .padding()
-
-        
+        .environmentObject(isState)
     }
 }
 

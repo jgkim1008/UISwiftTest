@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var sharedData: Model
+
+    let columns = [ GridItem(.flexible()),
+                    GridItem(.flexible())]
     
     var body: some View {
-        Text("빈 화면")
+        LazyVGrid(columns: columns) {
+            ForEach(0..<8) {_ in
+                ToggleView()
+            }
+        }
     }
 }
 

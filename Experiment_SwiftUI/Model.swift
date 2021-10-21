@@ -7,6 +7,7 @@
 
 import Foundation
 
-class Model {
-    //Step 3 에서 활용
+class Model: ObservableObject {
+    @Published var isState: Bool = false
+    
 }
