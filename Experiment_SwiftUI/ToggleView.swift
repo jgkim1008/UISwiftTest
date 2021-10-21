@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ToggleView: View {
     @State private var isStateToggleOn: Bool = false
-    @State private var isEnvironmentToggleOn: Bool = false
     @EnvironmentObject var sharedData: Model
     @StateObject var isState = Model()
     var body: some View {
@@ -28,7 +27,7 @@ struct ToggleView: View {
                 
                 Toggle("State", isOn: $isStateToggleOn)
                     .padding()
-                Toggle("Environment", isOn: $isEnvironmentToggleOn)
+                Toggle("Environment", isOn: $sharedData.isEnvironmentToggleOn)
                     .padding()
 
             }

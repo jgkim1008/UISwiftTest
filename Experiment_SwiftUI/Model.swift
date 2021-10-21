@@ -8,6 +8,6 @@
 import Foundation
 
 class Model: ObservableObject {
-    @Published var isState: Bool = false
+    @Published var isEnvironmentToggleOn: Bool = false
     
 }
